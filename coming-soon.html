@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Coming Soon — TravelHoli | Travel for Holi with Joy, Respect &amp; Meaning</title>
+  <meta name="description" content="This page is coming soon to TravelHoli.com — the global travel authority for experiencing Holi with joy, respect, and meaning. Explore our homepage for Holi dates, destinations, safety guides, and more.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://travelholi.com/coming-soon.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coming Soon — TravelHoli">
+  <meta property="og:description" content="This page is coming soon. Visit TravelHoli.com for Holi dates, destinations, and travel guides.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576018443498-6b301a099e8a?auto=format&fit=crop&w=1200&h=630&q=80">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --pink: #E91E63;
+      --orange: #FF6D00;
+      --amber: #FFB300;
+      --purple: #7B1FA2;
+      --deep-purple: #4A148C;
+      --dark: #16132B;
+      --white: #FFFFFF;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--dark);
+      color: var(--white);
+      overflow: hidden;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Animated background */
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bg__orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.3;
+      animation: float 12s ease-in-out infinite;
+    }
+
+    .bg__orb--1 {
+      width: 500px;
+      height: 500px;
+      background: var(--pink);
+      top: -10%;
+      left: -10%;
+      animation-delay: 0s;
+    }
+
+    .bg__orb--2 {
+      width: 400px;
+      height: 400px;
+      background: var(--orange);
+      top: 50%;
+      right: -5%;
+      animation-delay: -4s;
+      animation-duration: 15s;
+    }
+
+    .bg__orb--3 {
+      width: 350px;
+      height: 350px;
+      background: var(--purple);
+      bottom: -10%;
+      left: 30%;
+      animation-delay: -8s;
+      animation-duration: 18s;
+    }
+
+    .bg__orb--4 {
+      width: 250px;
+      height: 250px;
+      background: var(--amber);
+      top: 30%;
+      left: 50%;
+      animation-delay: -2s;
+      animation-duration: 14s;
+      opacity: 0.2;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0) scale(1);
+      }
+      25% {
+        transform: translate(30px, -40px) scale(1.05);
+      }
+      50% {
+        transform: translate(-20px, 20px) scale(0.95);
+      }
+      75% {
+        transform: translate(15px, 35px) scale(1.02);
+      }
+    }
+
+    /* Content */
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      max-width: 640px;
+      animation: fadeInUp 0.8s cubic-bezier(0.33, 1, 0.68, 1) both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      color: var(--white);
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo:hover {
+      opacity: 0.8;
+    }
+
+    .logo__dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #E91E63, #FF6D00, #FFB300);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.375rem 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 100px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.25rem, 6vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      display: block;
+      background: linear-gradient(135deg, #FFB300, #FF6D00, #E91E63);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+      min-height: 48px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn--primary {
+      background: linear-gradient(135deg, #E91E63, #FF6D00, #FFB300);
+      color: var(--white);
+      box-shadow: 0 4px 30px rgba(233, 30, 99, 0.25);
+    }
+
+    .btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 40px rgba(233, 30, 99, 0.35);
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: rgba(255, 255, 255, 0.7);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn--ghost:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* Color splash decorations */
+    .splash {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .splash--1 {
+      width: 12px;
+      height: 12px;
+      background: var(--pink);
+      top: 20%;
+      left: 15%;
+      animation: sparkle 3s ease-in-out infinite;
+    }
+
+    .splash--2 {
+      width: 8px;
+      height: 8px;
+      background: var(--amber);
+      top: 25%;
+      right: 20%;
+      animation: sparkle 3s ease-in-out infinite 0.5s;
+    }
+
+    .splash--3 {
+      width: 10px;
+      height: 10px;
+      background: var(--orange);
+      bottom: 30%;
+      left: 20%;
+      animation: sparkle 3s ease-in-out infinite 1s;
+    }
+
+    .splash--4 {
+      width: 6px;
+      height: 6px;
+      background: var(--purple);
+      bottom: 25%;
+      right: 15%;
+      animation: sparkle 3s ease-in-out infinite 1.5s;
+    }
+
+    .splash--5 {
+      width: 9px;
+      height: 9px;
+      background: #43A047;
+      top: 40%;
+      left: 8%;
+      animation: sparkle 3s ease-in-out infinite 2s;
+    }
+
+    .splash--6 {
+      width: 7px;
+      height: 7px;
+      background: #1565C0;
+      top: 60%;
+      right: 10%;
+      animation: sparkle 3s ease-in-out infinite 2.5s;
+    }
+
+    @keyframes sparkle {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.5);
+      }
+    }
+
+    /* Footer note */
+    .footer-note {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.25);
+      z-index: 1;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .actions {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .splash {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        padding: 1.5rem;
+      }
+
+      .badge {
+        font-size: 0.75rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__orb bg__orb--1"></div>
+    <div class="bg__orb bg__orb--2"></div>
+    <div class="bg__orb bg__orb--3"></div>
+    <div class="bg__orb bg__orb--4"></div>
+  </div>
+
+  <!-- Sparkle splashes -->
+  <div class="splash splash--1" aria-hidden="true"></div>
+  <div class="splash splash--2" aria-hidden="true"></div>
+  <div class="splash splash--3" aria-hidden="true"></div>
+  <div class="splash splash--4" aria-hidden="true"></div>
+  <div class="splash splash--5" aria-hidden="true"></div>
+  <div class="splash splash--6" aria-hidden="true"></div>
+
+  <!-- Content -->
+  <div class="content">
+    <a href="/" class="logo">
+      <span class="logo__dot"></span>
+      TravelHoli
+    </a>
+
+    <div class="badge">Coming Soon</div>
+
+    <h1>
+      Something Beautiful
+      <em>Is on Its Way</em>
+    </h1>
+
+    <p class="subtitle">
+      We're building this page with the same care and respect we bring to Holi itself.
+      In the meantime, explore our homepage for Holi dates, destinations, safety guides, and more.
+    </p>
+
+    <div class="actions">
+      <a href="/" class="btn btn--primary">
+        &#8592; Back to Homepage
+      </a>
+      <a href="/#faq" class="btn btn--ghost">
+        Read the FAQ
+      </a>
+    </div>
+  </div>
+
+  <p class="footer-note">&copy; 2026 TravelHoli.com — Travel for Holi with joy, respect, and meaning.</p>
+
+</body>
+</html>
